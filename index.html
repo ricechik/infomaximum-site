@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Infomaximum — IT-решения для бизнеса</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Infomaximum — интеллектуальные IT-решения, аналитика, Process Mining и автоматизация бизнес-процессов.">
+
+<link rel="icon" href="favicon.ico">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a data-page="home" class="logo">Infomaximum</a>
+    <nav>
+      <a data-page="about">О компании</a>
+      <a data-page="services">Услуги</a>
+      <a data-page="it">IT-структура</a>
+      <a data-page="career">Карьера</a>
+      <a data-page="contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="active fade">
+  <div class="hero">
+    <div>
+      <h1>Интеллектуальные IT-решения для бизнеса</h1>
+      <p>
+        Infomaximum создаёт аналитические платформы и автоматизирует бизнес-процессы.
+        <a data-page="about" class="hero-link">Узнать о нас лучше</a>
+      </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="IT решения">
+  </div>
+</section>
+
+<section id="about" class="fade">
+  <h2>О компании</h2>
+  <p>ООО «Инфомаксимум» — российская IT-компания, специализирующаяся на разработке интеллектуальных информационных систем, аналитических платформ и решений для цифровой трансформации бизнеса.</p>
+  <p>Мы помогаем организациям видеть реальные процессы, находить узкие места и принимать управленческие решения на основе данных.</p>
+  <p>Сегодня Infomaximum — это зрелая продуктовая компания с сильной инженерной культурой и собственными методологиями внедрения.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>История и рост</h3>
+      <p>От первых пилотных проектов до масштабных корпоративных внедрений в крупнейших компаниях.</p>
+    </div>
+    <div class="card">
+      <h3>Миссия и ценности</h3>
+      <p>Прозрачность процессов, честность данных и реальная польза для бизнеса.</p>
+    </div>
+    <div class="card">
+      <h3>Подход к работе</h3>
+      <p>Мы создаём решения под задачи клиента, а не продаём шаблоны.</p>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="fade">
+  <h2>Услуги</h2>
+  <p>Полный цикл IT-услуг: от анализа процессов до внедрения и сопровождения решений.</p>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80">
+      <h3>Process Mining</h3>
+      <p>Анализ реальных бизнес-процессов на основе цифровых следов.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80">
+      <h3>Аналитические платформы</h3>
+      <p>Корпоративная аналитика, KPI и управленческие панели.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80">
+      <h3>Интеграция систем</h3>
+      <p>ERP, CRM, BPM и корпоративные интеграции.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80">
+      <h3>Разработка ПО</h3>
+      <p>Кастомные IT-решения под задачи бизнеса.</p>
+    </div>
+  </div>
+</section>
+
+<section id="it" class="fade">
+  <h2>IT-структура</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Backend</h3>
+      <p>Микросервисная архитектура, масштабируемость и отказоустойчивость.</p>
+    </div>
+    <div class="card">
+      <h3>Frontend</h3>
+      <p>Современные интерфейсы и высокая производительность.</p>
+    </div>
+    <div class="card">
+      <h3>Data</h3>
+      <p>ETL, витрины данных и аналитические модели.</p>
+    </div>
+    <div class="card">
+      <h3>Безопасность</h3>
+      <p>Контроль доступа, аудит и защита данных.</p>
+    </div>
+  </div>
+</section>
+
+<section id="career" class="fade">
+  <h2>Карьера</h2>
+  <p>Мы строим сильную команду инженеров и аналитиков.</p>
+  <p>Рост, обучение и участие в масштабных проектах.</p>
+
+  <p class="chart-title">Динамика роста команды</p>
+  <canvas id="careerChart" height="120"></canvas>
+</section>
+
+<section id="contacts" class="fade">
+  <h2>Контакты</h2>
+
+  <div class="contact">
+    <div>
+      <p><strong>Телефон:</strong> 8 (800) 555-89-02</p>
+      <p><strong>Email:</strong> team@infomaximum.com</p>
+      <p><strong>Адрес:</strong> г. Саранск</p>
+    </div>
+
+    <form>
+      <div class="form-field">
+        <input placeholder=" ">
+        <label>ФИО</label>
+      </div>
+      <div class="form-field">
+        <input placeholder=" ">
+        <label>Email</label>
+      </div>
+      <div class="form-field">
+        <textarea placeholder=" "></textarea>
+        <label>Сообщение</label>
+      </div>
+      <button>Отправить</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="grid">
+    <div>© Infomaximum</div>
+    <div>Россия</div>
+    <div>support@infomaximum.com</div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
